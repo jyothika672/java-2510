@@ -154,3 +154,106 @@ this process how to write the Code
         -> JRE : You Compile Java Code Using JRE (javac)
 
         -> JVM : Reads .class file i.e Byte Code and Gives it to OS for execution
+
+18th July
+=========
+
+    -> Variables
+
+        -> Store the values ?
+
+            -> To retrieve data 
+            -> To perform some operations on data
+            -> To Store data
+
+        -> brand
+        -> description
+        -> ratings
+        -> price 
+
+        -> Data you want to store, you need to specify data type
+            -> above approach is called as Static Typed/Strict Typed
+
+        -> Data Type is classification of data
+
+            -> Primitive Data types 
+
+                -> Fundamental data types, which are prebuilt to store numbers, decimals,
+                    characters, symobols, true and false
+
+                        -> byte
+                        -> short
+                        -> int
+                        -> long
+                        -> float
+                        -> double
+                        -> char
+                        -> boolean
+
+
+            -> Non-Primitive Data types
+
+                -> Either we can use already defined by java, Strings, Arrays, Collections, Interfaces etc
+
+                -> As a user you can create your own data types as well
+                    Student, Employee, Company etc  
+    
+    -> NOTE : The local variable someDataNew2 may not have been initialized
+
+    -> We have Instance Variables, Local Variables & Satic Variables 
+
+        -> For any kind of Variables we work with, we need to specify Datatype
+
+    -> Based on the data type we select, default values are applicable
+
+    ->Code what i have done :
+-> package second_variables;
+public class LMSVariables {
+// Student-> ID,Name,Email,Password, Gender, Mobile Number
+//define datatype
+    public static void main(String[] args) {
+        short studentID = 101;
+        String studentName = "Jyo";
+        String studentEmail = "katrujyo@gmail.com";
+        String studentPassword = "pass@133";
+        char studentGender_1 = 'F';
+        boolean isStudentFemale = true;
+        long studentMobileNumber = 900009888;
+
+        System.out.println("Student ID:" +studentID);
+        System.out.println("Student Name:" +studentName);
+        System.out.println("Student Email:" +studentEmail);
+        System.out.println("Student Password:" +studentPassword);
+        System.out.println("Student Gender_1:" +studentGender_1);
+        System.out.println("Student Gender Female:" +isStudentFemale);
+        System.out.println("Student MobileNumber:" +studentMobileNumber);
+    }
+}
+->package second_variables;
+
+public class VariablesDemo {
+            //brand
+            //descripation
+            //rating
+            //price
+        // if we define variable in class we call them instance variables
+    static int someData1;
+    static double someData2;  //declartion
+    static char someData3; 
+    static boolean someData4;   
+    short price = 350;
+    String brand = "HIGHLANDER";
+    float rating=4.2f;
+    public static void main(String[] args) {
+        //if we define variable in methods we call them as local variables
+        int someDataNew1 = 10; //intilization
+        //int someDataNew2; // declaration
+        System.out.println(someDataNew1); 
+        //System.out.println(someDataNew2);
+
+        System.out.println(someData1);
+        System.out.println(someData2);
+        System.out.println(someData3);
+        System.out.println(someData4);
+    }
+}
