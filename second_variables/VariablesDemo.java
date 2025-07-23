@@ -16,7 +16,7 @@ public class VariablesDemo {
     public static void main(String[] args) {
         //if we define variable in methods we call them as local variables
         int someDataNew1 = 10; //intilization
-        int someDataNew2; // declaration
+        //int someDataNew2; // declaration
         System.out.println(someDataNew1); 
         //System.out.println(someDataNew2);
 
