@@ -328,6 +328,7 @@ public class CarVariables {
         -> NARROWING / Explicit Conversion / Type Casting
 
         -> To Perform Casting we need to keep target datatype in parentheses (int) before value
+
         ->double num3 = 3.14;
         int num4 = (int) num3;//Type mismatch: cannot convert from double to int
                             //you need to do the manual conversion
@@ -337,6 +338,7 @@ public class CarVariables {
     -> Incompatible Conversions
 
         -> Text To Number or Number To Text (Possible)
+        
         int zip = 500081;
        // String str_zip = (String)zip;//Cannot cast from int to String
        String str_zip = String.valueOf(zip);// String.valueOf is the key to do the process.
