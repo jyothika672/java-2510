@@ -27,5 +27,10 @@ public class Demo {
        System.out.println("Original Value:" +str_zip_new);
        System.out.println("Original Value:" +zip_new);
        System.out.println(zip_new+5);
+
+       //might not be possible
+       //int num6 = 100;
+       //boolean boolValue = (boolean)num6;//Cannot cast from int to boolean
+       //int to boolean is not allowed
     }
 }
