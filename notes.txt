@@ -654,4 +654,120 @@ public class BankTransactions {
     } 
 }
 
+-->24th July
+=========
+    ->Conditional Statements
+        ->Evaluate a condition(->boolean),Execute different blocks of code based on whether the condition is true or false
+        ->if
+            ->Execute a block of code if condition is true
+            //IF
+        int num = 10;
+        //check if the given num is positive
+        if(num>0){
+            System.out.println("The Number is Positive");
+        }
+        ->if else
+            ->Execute a block of code if condition is true,another block of code if codition is false.
+            //IF ELSE
+        //check if the given num is positive or negative
+        if(num>0){
+            System.out.println("The Number is Positive");
+        }else{
+            System.out.println("The Number is negative");
+        }
+            ->Ternary operators -same as id else,but concise form.
+            eg:variables=condition ? value_if_true : value_if_false.
+            //vote Eligibility check
+        int age=9;
+        if(age>=18){
+            System.out.println("You can vote");
+        }else{
+            System.out.println("You cannot vote");
+        }
+        //vote Eligibility check -->ternary operator 
+        String msg = (age >= 18) ? "You can vote":"You cannot vote";
+        System.out.println(msg);
+
+        -> else if ladder
+            ->allows multiple conditions to be checked
+            //else if ladder
+        int avg_score =70;
+        if(avg_score>90){
+            System.out.println("A Grade");
+
+        }else if(avg_score>=75){
+            System.out.println("B Grade");
+        }else if(avg_score>=60){
+            System.out.println("C Grade");
+
+        }else if(avg_score>=45){
+            System.out.println("D Grade");
+        }
+        ->switch
+            ->allows multiple conditions to be checked
+            -> we can use fall through behavior where we can assign multiple values
+            ->w e also have new switch-case from java 8 onwards, where we can use arrow operators ->
+                    //switch
+        int choice =2;
+        switch(choice){
+            case 1:
+                System.out.println("A selected");
+                break;
+            case 2:
+                System.out.println("B selected");
+                break;
+            case 3:
+                System.out.println("C selected");
+                break;
+            case 4:
+                System.out.println("D selected");
+                break;
+        }
+
+        //swith case - fall through(old way till java)
+
+        int day=4;
+        switch (day) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("weekday");
+                break;
+            case 6:
+            case 7:
+            System.out.println("wednesday");
+                break;
+        
+            default:
+            System.out.println("Invalid day");
+                break;
+        }
+
+        //swith case - using arrow operator(from java8 supports)
+        String category_age = switch (age){
+                case 0,1,2,3,4 -> "Toddler";
+                case 5,6,7,8,9,10,11,12 -> "Child";
+                case 13,14,15,16,17,18,19 ->"Teenager";
+                case 20,21,22,23,24,25,26 ->"Young Adult";
+                default -> "Adult";
+        };
+        System.out.println(category_age);
+
+        NOTE: we can also use nested conditions,condition inside another condition
+        int age_verify = 22;
+        boolean id = true;
+        if(age_verify>=21){
+            if(id == true){
+                System.out.println("Can Enter");
+            }else{
+                System.out.println("Canont Enter Without ID");
+            }
+        }else{
+            System.out.println("Cannot Enter you are too young");
+        }
+        
+    
+
 
