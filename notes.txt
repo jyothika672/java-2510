@@ -338,7 +338,7 @@ public class CarVariables {
     -> Incompatible Conversions
 
         -> Text To Number or Number To Text (Possible)
-        
+         
         int zip = 500081;
        // String str_zip = (String)zip;//Cannot cast from int to String
        String str_zip = String.valueOf(zip);// String.valueOf is the key to do the process.
@@ -508,3 +508,5 @@ public class CarVariables {
                 //right shift
                 //int valueb = 3; //0000000000000011
                 System.out.println(valueb>>2);//0000000000000000-->0
+
+                https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
