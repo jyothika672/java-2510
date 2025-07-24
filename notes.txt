@@ -604,5 +604,54 @@ public class LMSOperators {
                 -> return
 ===>TASK
 1.Calculate the Monthly EMI
+package fourth_operators;
+
+public class MonthlyEMI {
+    public static void main(String[] args) {
+        double Loan_Amount = 1810887;
+        double Annual_Interest_Rate = 9.5;
+        int Loan_Months = 4;
+
+        double Monthly_Interest_Rate = Annual_Interest_Rate / 12/100;
+        System.out.println("Monthly Interest Rate:"+Monthly_Interest_Rate);
+        int number_Of_Months = Loan_Months *12;
+
+        double Emi = ( Loan_Amount * Monthly_Interest_Rate*Math.pow( 1 + Monthly_Interest_Rate,number_Of_Months)) / (Math.pow(1 + Monthly_Interest_Rate,number_Of_Months) - 1);
+        System.out.println("Emi:" +Emi);
+    }
+}
+
+
 2.Simple Bank Transactions
+
+    package fourth_operators;
+
+public class BankTransactions {
+    public static void main(String[] args) {
+        String Account_Holder_Name = "Jyothika";
+        System.out.println("Account Holder Name:"+Account_Holder_Name);
+        int Transactions = 0;
+        double Account_Balance = 8900;
+        boolean Account_Status = Account_Balance>1000;
+        System.out.println("Account Balance:" +Account_Balance);
+        System.out.println("Account Status:"+Account_Status);
+        double Deposit_Amount = 1000;
+        System.out.println("Deposit Amount:" +Deposit_Amount);
+        boolean Vaild_deposit = Deposit_Amount>500 && Account_Status;
+        System.out.println("Valid Deposit:"+Vaild_deposit);
+        Account_Balance += Deposit_Amount;
+        Transactions++;
+        System.out.println("Account Balance:"+Account_Balance);
+        double Withdrawal_Amount = 100;
+        System.out.println("Withdrawal Amount:"+Withdrawal_Amount);
+        Account_Balance = Account_Balance - Withdrawal_Amount;
+        Transactions++;
+        System.out.println("Account Balance:"+Account_Balance);
+        System.out.println();
+        System.out.println("Final Balance in Account:"+Account_Balance);
+        System.out.println("Number of Transcations:"+Transactions);
+
+    } 
+}
+
 
