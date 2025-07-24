@@ -6,11 +6,11 @@ public class MonthlyEMI {
         double Annual_Interest_Rate = 9.5;
         int Loan_Months = 4;
 
-        double Monthly_Interest_Rate = Annual_Interest_Rate / 12/100;
+        double Monthly_Interest_Rate = Annual_Interest_Rate / 12/100; //we use Operators 
         System.out.println("Monthly Interest Rate:"+Monthly_Interest_Rate);
         int number_Of_Months = Loan_Months *12;
 
-        double Emi = ( Loan_Amount * Monthly_Interest_Rate*Math.pow( 1 + Monthly_Interest_Rate,number_Of_Months)) / (Math.pow(1 + Monthly_Interest_Rate,number_Of_Months) - 1);
+        double Emi = ( Loan_Amount * Monthly_Interest_Rate*Math.pow( 1 + Monthly_Interest_Rate,number_Of_Months)) / (Math.pow(1 + Monthly_Interest_Rate,number_Of_Months) - 1);//Math.pow is to power of somethig we use.
         System.out.println("Emi:" +Emi);
     }
 }
