@@ -914,7 +914,184 @@ public class LoopsDemo {
 
     }
 }
+
+
+
+28th July
+=========
+
+    -> LMS With Variables - Data Types - Operators - Type Casting 
+        - Conditionals - Loops
+
+        package fifth_Control_Statements;
+import java.util.Scanner;
+public class LMSDemo {
+
+// Variables - Data Types - Operators - Type Casting - Conditionals - Loops
+
+
+
+    public static void main(String[] args) {
         
+        // Collect Student ID & Name
+        Scanner sc = new Scanner(System.in);
+
+        // Prompt Student for ID & Name
+        System.out.println("Enter ID: ");
+        int studentID = sc.nextInt();
+
+        System.out.println("Enter Name: ");
+        String studentName = sc.next();
+
+        // Update attendance & scores
+        System.out.println("Enter Attendance: ");
+        double attendance = sc.nextDouble();
+        int totalScore = 0;
+        int numberOfSubjects = 0;
+
+        // using while - repeatedly ask the user to enter scores 
+        char continueInput = 'y';
+        while (continueInput == 'y' || continueInput == 'Y') {
+            System.out.println("Enter Score For Subject: "+(numberOfSubjects+1));
+            int currentScore = sc.nextInt();
+            totalScore+=currentScore;
+            numberOfSubjects++;
+            System.out.println("Do you want to add another score (y/n): ");
+            continueInput = sc.next().charAt(0);
+        }
+
+        // Calculate Average Score:
+        // Type Casting Needed -> 
+        double avgScore = (double) totalScore/numberOfSubjects;
+        System.out.println("Average Score: "+avgScore);
+
+        // Determine Performance Level
+        String performance;
+        if (avgScore >=85) {
+            performance = "Excellent";
+        } else if (avgScore >=70) {
+            performance = "Good";
+        } else if (avgScore >=50){
+           performance = "Average";
+        } else {
+            performance = "Needs Improvement";
+        }
+
+        // Check Attendance Status -> less than 75% : WARNING - LOW ATTENDANCE 
+        // if 75 or above : OK - ATTENDANCE SATISFIED
+        // try with ternary operator
+        // syntax - var = condition ? "value_if_true" : "value_if_false"
+        String attendanceStatus = attendance >= 75 ? "OK - ATTENDANCE SATISFIED" : "WARNING - LOW ATTENDANCE ";
+        
+        // Display Final Results
+        System.out.println("Name: "+studentName);
+        System.out.println("Student Attendance: "+attendance);
+        System.out.println("Total Score: "+totalScore);
+        System.out.println("Average Score: "+avgScore);
+
+        System.out.println(studentName+" Performance: "+performance);
+        System.out.println(studentName+"Attendance Performance: "+attendanceStatus);
+
+    }
+}
+
+
+
+
+29th July
+=========    
+
+    -> Object Oriented Programming (OOP)
+
+        -> OOPS is a way of Structuring code, so that we can group 
+            data(Variables) and behavior(Methods) using Objects
+
+        -> OOP Concepts
+
+            -> Classes
+            -> Objects
+
+            -> Inheritance
+            -> Encapsulation
+            -> Polymorphism
+            -> Abstraction
+
+    -> Considering Laptop as an Object
+
+        -> data(Variables) and behavior(Methods)
+
+            -> Data - Variables
+
+                -> LaptopBrand = MAC -> String laptopBrand = "MAC";
+                -> LaptopWeight = 1.5 -> double  laptopWeight = 1.5;
+                -> LaptopModel = MACBOOK AIR -> String laptopModel = "MACBOOK AIR";
+
+            -> Behavior - Methods (Task)
+
+                -> Laptop can browse -> public void browseWeb() {} 
+                -> Laptop can play videos -> public void playVideos() {} 
+                -> Laptop can do some task -> public void doTask() {} 
+
+        -> Laptop, Person, Anything can be an Object
+
+        -> To Create an Object ? 
+            We need Class ?
+
+        -> Class ?
+
+            -> Blueprint of Object
+
+        -> Object 
+
+            -> Real instance of an class
+
+        -> Methods
+
+            -> Method is a block of code that performs a TASK / ACTION         
+
+        -> Data (Variables) we can represent them in 
+
+            -> Class Level -> Instance Variables
+            -> Inside Methods -> Local Variables
+            -> Using Static keyword -> Static Variables
+
+
+package six_class_obj_methods;
+
+public class CarFactory {
+
+    // Data -> Instance Variables
+    String carBrand;
+    double carPrice;
+    int carReviews;
+    double carRating;
+
+    // Static Data -> Fixed Data -> Static Variables
+    static int  discountWebsite = 5;
+
+    // Behavior Method Task
+    public void displayCar_shortInfo(){
+        
+        String description = "A car is a vehicle that has wheels, carries a small number of passengers, and is moved by an engine or a motor. Cars are also called automobiles or motor vehicles. Trucks and buses are motor vehicles as well."; 
+        System.out.println("When Hovered: ");
+        System.out.println("Car Brand: "+carBrand);
+        System.out.println("Car Price: "+carPrice);
+        System.out.println("Car Desc: "+description);
+    }
+
+    public void displayCar_completeInfo(){
+        
+        // System.out.println("Car Brand: "+carBrand);
+        // System.out.println("Car Price: "+carPrice);
+        System.out.println("When Clicked: ");
+        displayCar_shortInfo(); // Reusing
+        System.out.println("Car Reviews: "+carReviews);
+        System.out.println("Car Ratings: "+carRating);
+    }
+
+}
+
+ 
     
 
 
