@@ -1180,6 +1180,17 @@ public class CarFactory {
                     B       C
                         D
 
+14th Aug
+========  
+
+    -> super keyword, is used to refer the parent class members
+
+        -> methods, variables, constructors 
+        -> differentiate between members of subclass and members with
+        same name in super class
+
+
+        
     
     30th July
 =========
