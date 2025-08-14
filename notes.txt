@@ -1174,7 +1174,8 @@ public class CarFactory {
 
         -> Hybrid Level Inheritance
 
-            -> Combination of Single + Multiple + Multilevel
+            -> Combination of at leasttwo types of Inheritance
+                    Single + Multiple or Multilevel
 
                         A
                     B       C
@@ -1190,7 +1191,7 @@ public class CarFactory {
         same name in super class
 
 
-        
+
     
     30th July
 =========
