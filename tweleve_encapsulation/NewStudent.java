@@ -22,6 +22,10 @@ public class NewStudent {
     public void setAttended(boolean isAttended) {
         this.isAttended = isAttended;
     }
+    public void getAttendance() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAttendance'");
+    }
 
     
     // public NewStudent(int id){
