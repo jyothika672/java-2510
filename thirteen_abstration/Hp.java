@@ -14,4 +14,10 @@ public class Hp implements Laptop {
         System.out.println("HP Super Fast C Slot");
     }
 
+    @Override
+    public void audioJack() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'audioJack'");
+    }
+
 }

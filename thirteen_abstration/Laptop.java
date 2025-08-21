@@ -26,6 +26,8 @@ public interface Laptop {
         System.out.println("Government Provided Ethernet Slot");
     }
 
+    public void audioJack();
+
     // concrete method -> Not allowed
     // public void addNums() {
         

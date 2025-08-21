@@ -15,4 +15,10 @@ public class Lenovo implements Laptop {
         System.out.println("Lenovo C Slot");
     }
 
+    @Override
+    public void audioJack() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'audioJack'");
+    }
+
 }
