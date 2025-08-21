@@ -1,6 +1,6 @@
 package pack2;
 
-import pack1.Person;
+import pack.Person;
 
 public class SubClassTest extends Person{
     public static void main(String[] args) {
