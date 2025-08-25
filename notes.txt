@@ -1344,6 +1344,23 @@ public class CarFactory {
 
             -> class extends AbsClass_A, AbsClass_B - Not Okay
 
+
+
+
+             
+22nd Aug
+========
+
+    -> Apply Abstraction On LMS Project - Part 1
+
+
+23rd Aug
+========
+
+    -> Apply Abstraction On LMS Project - Part 2
+
+
+
             
     
     

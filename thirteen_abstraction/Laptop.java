@@ -1,4 +1,4 @@
-package thirteen_abstration;
+package thirteen_abstraction;
 
 public interface Laptop {
 

@@ -1,4 +1,4 @@
-package thirteen_abstration;
+package thirteen_abstraction;
 
 // public class NewLenovo implements Laptop { } --> concrete class
 

@@ -1,4 +1,4 @@
-package thirteen_abstration;
+package thirteen_abstraction;
 
 // implement contact (Laptop Interface)
 public class Lenovo implements Laptop {
