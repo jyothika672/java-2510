@@ -1,9 +1,8 @@
 package fourteen_polymorphism;
 
-public class Dog extends Animal{
-    
+public class DOg extends Animal{
     @Override
     public void sound(){
-        System.out.println("Barking");
+        System.out.println("Animal");
     }
 }
