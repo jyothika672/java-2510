@@ -1443,5 +1443,40 @@ NOTE : Exception Handling - Multi Threading - Regular Expressions - Collection -
 
 
             
+========SQL========
+
+Database: It is collection of information which has meaning
+        sid sname fee
+        101 ravi  5000
+
+DBMS:
+    There are programs written under some rules and regulations to manage the data properly
+    These programs are called database management system
+
+    so DBMS is software
+
+    DBMS are Four types:
+    HDBMS--->Hierarchial database management system:
+        like our folder structure  
+        update and no relation  one to one, one to many,many to many->this is not Possible is a problem
+
+    NDBMS--->Network Database Management System:
+        It is a sets data will be showen
+
+
     
-    
+    RDBMS--->Relational Database Management System:
+        Here first time tables are introduced
+
+        any dbms follow half of the codd's rules that is called RDBMS
+
+        Dr E.F codd ----------->12 rules
+                                    1.data must be in tabuler format only.
+                                    2.one columns data should not maintain more than one value.
+
+    ORDBMS====>oops + RDBMS
+
+
+=>SQL->Structured Query Language
+
+
